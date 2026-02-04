@@ -26,15 +26,23 @@ new_collection/
 3. **Flutter SDK** for building the app
 4. **Tor** for SOCKS5 proxy
 
-### Updating the Flutter App Submodule
+### Updating the Flutter App Submodule (ONCE at start of clone)
 
 To ensure the Flutter app refers to the latest commit of the main branch:
 
 ```bash
 git submodule update --init --recursive --remote
 ```
-
 This fetches the latest changes from the `main` branch of the [SelfPrivacy-Flutter-Ubuntu-and-Android-App-Over-Tor](https://github.com/selfprivacy-over-tor/SelfPrivacy-Flutter-Ubuntu-and-Android-App-Over-Tor) repository.
+
+### Updating Flutter App submodule after commit
+Each time you push commits to the SelfPrivacy-Flutter-Ubuntu-and-Android-App-Over-Tor repo, in this Manager-Ubuntu-SelfPrivacy-Over-Tor repo get that latest commit with:
+```sh
+cd /home/a/git/git/selfprivacy/Manager-Ubuntu-SelfPrivacy-Over-Tor
+git add flutter-app/selfprivacy.org.app
+git commit -m "Update flutter-app submodule to latest"
+git push
+```
 
 ### Step 1: Deploy Backend (VirtualBox)
 
