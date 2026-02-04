@@ -1,0 +1,4 @@
+[submodule "flutter-app/selfprivacy.org.app"]
+	path = flutter-app/selfprivacy.org.app
+	url = git@github.com:a-t-0/selfprivacy-tor.git
+	branch = try0

@@ -1,0 +1,27 @@
+# Build outputs
+result
+result-*
+*.iso
+
+# Logs
+*.log
+
+# Nix
+.direnv/
+
+# Flutter build artifacts (in submodule, but just in case)
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
