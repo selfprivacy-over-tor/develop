@@ -26,6 +26,16 @@ new_collection/
 3. **Flutter SDK** for building the app
 4. **Tor** for SOCKS5 proxy
 
+### Updating the Flutter App Submodule
+
+To ensure the Flutter app refers to the latest commit of the main branch:
+
+```bash
+git submodule update --init --recursive --remote
+```
+
+This fetches the latest changes from the `main` branch of the [SelfPrivacy-Flutter-Ubuntu-and-Android-App-Over-Tor](https://github.com/selfprivacy-over-tor/SelfPrivacy-Flutter-Ubuntu-and-Android-App-Over-Tor) repository.
+
 ### Step 1: Deploy Backend (VirtualBox)
 
 ```bash
